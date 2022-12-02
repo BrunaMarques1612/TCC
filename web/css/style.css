@@ -1,243 +1,274 @@
-*{  
-    font-family: 'Nunito Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    overflow-x: hidden;
-
-    scroll-behavior: smooth;
-}
-body::-webkit-scrollbar {
-    width: 22px;               /* width of the entire scrollbar */
-  }
-  
-body::-webkit-scrollbar-track {
-    background: rgb(219, 252, 252);        /* color of the tracking area */
-  }
-  
-body::-webkit-scrollbar-thumb {
-    background-color: #00c2ea;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
-  }
-body{
+    * {
+        font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     
-    font-family: 'Nunito Sans', sans-serif;
-    margin-left: 100vw;
-}
-#preloader {
+    html {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
     
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:#00c2ea; /* cor do background que vai ocupar o body */
-    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
-}
-#preloader .inner {
-    position: absolute;
-    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
-    left: 50%;
-    transform: translate(-50%, -50%);  
-}
-.bolas > div {
-  display: inline-block;
-  background-color: #fff;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  margin: 3px;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-name: animarBola;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-   
-}
-.bolas > div:nth-child(1) {
-    animation-duration:0.75s ;
-    animation-delay: 0;
-}
-.bolas > div:nth-child(2) {
-    animation-duration: 0.75s ;
-    animation-delay: 0.12s;
-}
-.bolas > div:nth-child(3) {
-    animation-duration: 0.75s  ;
-    animation-delay: 0.24s;
-}
- 
-@keyframes animarBola {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  16% {
-    -webkit-transform: scale(0.1);
-    transform: scale(0.1);
-    opacity: 0.7;
-  }
-  33% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; 
-  } 
-}#preloader {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:#00c2ea; /* cor do background que vai ocupar o body */
-    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
-}
-#preloader .inner {
-    position: absolute;
-    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
-    left: 50%;
-    transform: translate(-50%, -50%);  
-}
-.bolas > div {
-  display: inline-block;
-  background-color: #fff;
-  width: 17px;
-  height: 17px;
-  border-radius: 100%;
-  margin: 3px;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-name: animarBola;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-   
-}
-.bolas > div:nth-child(1) {
-    animation-duration:0.75s ;
-    animation-delay: 0;
-}
-.bolas > div:nth-child(2) {
-    animation-duration: 0.75s ;
-    animation-delay: 0.12s;
-}
-.bolas > div:nth-child(3) {
-    animation-duration: 0.75s  ;
-    animation-delay: 0.24s;
-}
- 
-@keyframes animarBola {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  16% {
-    -webkit-transform: scale(0.1);
-    transform: scale(0.1);
-    opacity: 0.7;
-  }
-  33% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; 
-  } 
-}
-header{
-    margin: 10px 10vw;
-}
-.container-header{
-    min-width: 200%;
-    display: flex;
-}
-.container-header .user-login{
+    body::-webkit-scrollbar {
+        width: 22px;
+        /* width of the entire scrollbar */
+    }
     
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    margin-left: 56.4vw;
-}
-.container-header .user-login small{
-    color: #00c2ea;
-   
-    font-weight: bolder;
-    font-size: 18px;
-    margin-top: 20px;
-    display: block;
-}
-.container-header .user-login a{
-    text-decoration: none;
-}
-.container-header .user-login img{
-    margin-right: 10px;
-    margin-left: 20px;
-}
-.img-user{
-    display: block;
-}
-nav{
-    max-width: 100%;
-    min-width: 40%;
-    background: rgb(248, 248, 248);
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 15px;
-}
-
-.navbar a{
-    font-size: 14px;
-    margin-right: 4vw;
-}
-.navbar a:hover{
-    font-weight: bolder;
-    color: #00c2ea;
-}
-.form-inline{
-    display: flex;
-    max-width: 100%;
-    margin-left: 18vw;
-  
-}
-/* .form-inline input:hover{
+    body::-webkit-scrollbar-track {
+        background: rgb(219, 252, 252);
+        /* color of the tracking area */
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: #00c2ea;
+        /* color of the scroll thumb */
+        border-radius: 20px;
+        /* roundness of the scroll thumb */
+        border: 3px solid rgb(255, 255, 255);
+        /* creates padding around scroll thumb */
+    }
+    
+    body {
+        font-family: 'Nunito Sans', sans-serif;
+        margin-left: 100vw;
+    }
+    
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #00c2ea;
+        /* cor do background que vai ocupar o body */
+        z-index: 999;
+        /* z-index para jogar para frente e sobrepor tudo */
+    }
+    
+    #preloader .inner {
+        position: absolute;
+        top: 50%;
+        /* centralizar a parte interna do preload (onde fica a animação)*/
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .bolas>div {
+        display: inline-block;
+        background-color: #fff;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        margin: 3px;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: animarBola;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    .bolas>div:nth-child(1) {
+        animation-duration: 0.75s;
+        animation-delay: 0;
+    }
+    
+    .bolas>div:nth-child(2) {
+        animation-duration: 0.75s;
+        animation-delay: 0.12s;
+    }
+    
+    .bolas>div:nth-child(3) {
+        animation-duration: 0.75s;
+        animation-delay: 0.24s;
+    }
+    
+    @keyframes animarBola {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+        16% {
+            -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+            opacity: 0.7;
+        }
+        33% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #00c2ea;
+        /* cor do background que vai ocupar o body */
+        z-index: 999;
+        /* z-index para jogar para frente e sobrepor tudo */
+    }
+    
+    #preloader .inner {
+        position: absolute;
+        top: 50%;
+        /* centralizar a parte interna do preload (onde fica a animação)*/
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .bolas>div {
+        display: inline-block;
+        background-color: #fff;
+        width: 17px;
+        height: 17px;
+        border-radius: 100%;
+        margin: 3px;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: animarBola;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    .bolas>div:nth-child(1) {
+        animation-duration: 0.75s;
+        animation-delay: 0;
+    }
+    
+    .bolas>div:nth-child(2) {
+        animation-duration: 0.75s;
+        animation-delay: 0.12s;
+    }
+    
+    .bolas>div:nth-child(3) {
+        animation-duration: 0.75s;
+        animation-delay: 0.24s;
+    }
+    
+    @keyframes animarBola {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+        16% {
+            -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+            opacity: 0.7;
+        }
+        33% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    header {
+        margin: 10px 10vw;
+    }
+    
+    .container-header {
+        min-width: 200%;
+        display: flex;
+    }
+    
+    .container-header .user-login {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        margin-left: 56.4vw;
+    }
+    
+    .container-header .user-login small {
+        color: #00c2ea;
+        font-weight: bolder;
+        font-size: 18px;
+        margin-top: 20px;
+        display: block;
+    }
+    
+    .container-header .user-login a {
+        text-decoration: none;
+    }
+    
+    .container-header .user-login img {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    
+    .img-user {
+        display: block;
+    }
+    
+    nav {
+        max-width: 100%;
+        min-width: 40%;
+        background: rgb(248, 248, 248);
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 15px;
+    }
+    
+    .navbar a {
+        font-size: 14px;
+        margin-right: 4vw;
+    }
+    
+    .navbar a:hover {
+        font-weight: bolder;
+        color: #00c2ea;
+    }
+    
+    .form-inline {
+        display: flex;
+        max-width: 100%;
+        margin-left: 18vw;
+    }
+    /* .form-inline input:hover{
     
 } */
-.form-inline button{
-    color: white;
-    border: none;
-    background-color: #00c2ea;
-}
-.form-inline button:hover{
-    color: white;
-    border: none;
-    background-color: #00c2ea;
-}
-.conteudo-carousel1{
-    text-align: justify;
-    z-index: 4;
-    font-family: 'Lato', sans-serif;
-    position: absolute;
-    font-size: 25px;
-    margin: 10vw;
-    width: 35vw;
-} 
-
-.conteudo-carousel1 p{
-  
-    color: #00c2ea;
-}
-.conteudo-carousel2{
-    text-align: justify;
-    z-index: 4;
-    font-family: 'Lato', sans-serif;
-    position: absolute;
-    font-size: 25px;
-    margin: 10vw;
-    width: 35vw;
-} 
-
-/* .conteudo-carousel2 p{
+    
+    .form-inline button {
+        color: white;
+        border: none;
+        background-color: #00c2ea;
+    }
+    
+    .form-inline button:hover {
+        color: white;
+        border: none;
+        background-color: #00c2ea;
+    }
+    
+    .conteudo-carousel1 {
+        text-align: justify;
+        z-index: 4;
+        font-family: 'Lato', sans-serif;
+        position: absolute;
+        font-size: 25px;
+        margin: 10vw;
+        width: 35vw;
+    }
+    
+    .conteudo-carousel1 p {
+        color: #00c2ea;
+    }
+    
+    .conteudo-carousel2 {
+        text-align: justify;
+        z-index: 4;
+        font-family: 'Lato', sans-serif;
+        position: absolute;
+        font-size: 25px;
+        margin: 10vw;
+        width: 35vw;
+    }
+    /* .conteudo-carousel2 p{
     
     color: #00c2ea;
 }
@@ -254,403 +285,763 @@ nav{
 .conteudo-carousel3 p{
     color: #00c2ea;
 } */
-.carousel-item img{
-    object-fit: cover;
-}
-#btn-saibaMais{
-    margin-top: 20px;
-    margin-right: 20px;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    color: white;
-    background-color: #00c2ea;
-}
-#btn-criarConta{
-    margin-top: 20px;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    color: #00c2ea;
-    background-color: white;
-    border: 2px solid #00c2ea;
-}
-.container-section{
-    margin: 0 10vw;
-    display: grid;
-    top: 45vw;
-    position: absolute;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1vw;
-}
-.container-section a{
-    color: black;
-    text-decoration: none;   
-}
-.container-section a:hover{
-    color:black;
-}
-
-.container-section .cards-top{
-    margin-top: 4vw;
-}
-.container-section .cards-down{
-    margin-top: -4vw;
-}
-.container-cards{
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0px 10px 30px rgb(235, 235, 235);
-    padding: 40px;
-    max-width: 80vw;
-    min-height: 27vw;
-    max-height: 130vw;
-    background-color: rgb(255, 255, 255);
-}
-.container-cards:hover{
-    transition: 1.5s;
-    box-shadow: 0px 10px 50px #00c2ea;
-}
-.cards, .cards-down, .cards-top{
-    margin-top: 0;
-}
-.container-cards img{
-    min-width: 100%;
-    max-width: 22vw;
-}
-.container-cards #title-cards{
-    font-size: 20px;
-    margin-top: 8px;
-    text-align: center;
-}
-/* .container-cards #text-cards{
+    
+    .carousel-item img {
+        object-fit: cover;
+    }
+    
+    #btn-saibaMais {
+        margin-top: 20px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 20px;
+        color: white;
+        background-color: #00c2ea;
+    }
+    
+    #btn-criarConta {
+        margin-top: 20px;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 20px;
+        color: #00c2ea;
+        background-color: white;
+        border: 2px solid #00c2ea;
+    }
+    
+    .container-section {
+        margin: 0 10vw;
+        display: grid;
+        top: 45vw;
+        position: absolute;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1vw;
+    }
+    
+    .container-section a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .container-section a:hover {
+        color: black;
+    }
+    
+    .container-section .cards-top {
+        margin-top: 4vw;
+    }
+    
+    .container-section .cards-down {
+        margin-top: -4vw;
+    }
+    
+    .container-cards {
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0px 10px 30px rgb(235, 235, 235);
+        padding: 40px;
+        max-width: 80vw;
+        min-height: 27vw;
+        max-height: 130vw;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .container-cards:hover {
+        transition: 1.5s;
+        box-shadow: 0px 10px 50px #00c2ea;
+    }
+    
+    .cards,
+    .cards-down,
+    .cards-top {
+        margin-top: 0;
+    }
+    
+    .container-cards img {
+        min-width: 100%;
+        max-width: 22vw;
+    }
+    
+    .container-cards #title-cards {
+        font-size: 20px;
+        margin-top: 8px;
+        text-align: center;
+    }
+    /* .container-cards #text-cards{
     
 } */
-#background-section{
-    opacity: 0.8;
-    object-fit: cover;
-    width: 100%;
-    height: 40vw;
-    margin-top: 25vw;
-}
-.container-noticias{
-    margin: 2vw 10vw;
-    gap: 1vw;
-    display: grid;
-    grid-template-areas: 
-    "grid-noticias1 grid-noticias1 grid-noticias1"
-    "grid-noticias2 grid-noticias3 grid-noticias4"
-    "grid-noticias5 grid-noticias5 grid-noticias5";
-}
-.container-noticias img{
-    width: 24.8vw;
-}
-.grid-noticias1{
-    grid-area: grid-noticias1;
-}
-.grid-noticias1 img{
-    position: relative;
-    width: 78vw;
-    height: 35vw;
-}
-.grid-noticias1 p{
-    top: 30vw;
-    width: 20vw;
-    position: absolute;
-}
-.grid-noticias2{
-    grid-area: grid-noticias2;
-}
-.grid-noticias3{
-    grid-area: grid-noticias3;
-}
-.grid-noticias4{
-    grid-area: grid-noticias4;
-}
-.grid-noticias5{
-    display: flex;
-    grid-area: grid-noticias5;
-}
-.grid-noticias5 img{
-    width: 40vw;
-    height: 24vw;
-}
-.noticias-fim p{
-    text-align: justify;
-    padding: 0 20px;
-    flex-direction: column;
-    display: flex;
-}
-.noticias-fim p{
-    width: 39vw;
-}
-
-@media(max-width:1570px){
-    .container-section{
-        
-        height: -60vw;
-        top: -60vw;
-        margin: 0 10vw;
-        display: grid;
-        position: relative;
-        grid-template-columns: repeat(2, 4fr);
-        gap: 1vw;
+    
+    #background-section {
+        opacity: 0.8;
+        object-fit: cover;
+        width: 100%;
+        height: 40vw;
+        margin-top: 25vw;
     }
     
-    #section-escolhas{
-        background-color: #7cc3df;
-    }
-    .container-cards{
-        box-shadow: none;
-    }
-    #background-section{
-        visibility: hidden;
-        z-index: 0;
-        
-    }
-    .navbar a{
-        font-size: 14px;
-    }
-    .navbar a{
-        margin-right: 2vw;
-    }
-    .form-inline {
-        display: flex;
-        max-width: 100%;
-        margin-left: 0vw;
-      
-    }
-   
-    .container-section img{
-        min-height: 20vw;
-        width: 100%;
-    }
-    .container-section .cards-top{
-        margin-top:0;
-    }
-    .container-section .cards-down{
-        margin-top: 0;
-    }
-}
-@media(max-width:1395px){
-    .container-section{
-        min-height: -10vw;
-    }
-
-    .container-section{
-        margin: 0 10vw;
-        display: grid;
- 
-        position: relative;
-        grid-template-columns: repeat(2, 4fr);
+    .container-noticias {
+        margin: 2vw 10vw;
         gap: 1vw;
-    }
-
-}
-@media(max-width:900px){
-    header{
-        width: 70%;
-    }
-    .container-header .user-login{
-        display: flex;
-        margin-right: 20px;
-        margin-left: 10vw;
-    }
-    .container-section{
-        width: 200vw;
-        margin: 0 10vw;
         display: grid;
+        grid-template-areas: "grid-noticias1 grid-noticias1 grid-noticias1" "grid-noticias2 grid-noticias3 grid-noticias4" "grid-noticias5 grid-noticias5 grid-noticias5";
+    }
+    
+    .container-noticias img {
+        width: 24.8vw;
+    }
+    
+    .grid-noticias1 {
+        grid-area: grid-noticias1;
+    }
+    
+    .grid-noticias1 img {
         position: relative;
-        grid-template-columns: repeat(1, 4fr);
-        gap: 1vw;
+        width: 78vw;
+        height: 35vw;
     }
-    .container-section img{
-        min-height: 20vw;
+    
+    .grid-noticias1 p {
+        top: 30vw;
+        width: 20vw;
+        position: absolute;
+    }
+    
+    .grid-noticias2 {
+        grid-area: grid-noticias2;
+    }
+    
+    .grid-noticias3 {
+        grid-area: grid-noticias3;
+    }
+    
+    .grid-noticias4 {
+        grid-area: grid-noticias4;
+    }
+    
+    .grid-noticias5 {
+        display: flex;
+        grid-area: grid-noticias5;
+    }
+    
+    .grid-noticias5 img {
+        width: 40vw;
+        height: 24vw;
+    }
+    
+    .noticias-fim p {
+        text-align: justify;
+        padding: 0 20px;
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .noticias-fim p {
+        width: 39vw;
+    }
+    
+    @media(max-width:1570px) {
+        .container-section {
+            height: -60vw;
+            top: -60vw;
+            margin: 0 10vw;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(2, 4fr);
+            gap: 1vw;
+        }
+        #section-escolhas {
+            background-color: #7cc3df;
+        }
+        .container-cards {
+            box-shadow: none;
+        }
+        #background-section {
+            visibility: hidden;
+            z-index: 0;
+        }
+        .navbar a {
+            font-size: 14px;
+        }
+        .navbar a {
+            margin-right: 2vw;
+        }
+        .form-inline {
+            display: flex;
+            max-width: 100%;
+            margin-left: 0vw;
+        }
+        .container-section img {
+            min-height: 20vw;
+            width: 100%;
+        }
+        .container-section .cards-top {
+            margin-top: 0;
+        }
+        .container-section .cards-down {
+            margin-top: 0;
+        }
+    }
+    
+    @media(max-width:1395px) {
+        .container-section {
+            min-height: -10vw;
+        }
+        .container-section {
+            margin: 0 10vw;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(2, 4fr);
+            gap: 1vw;
+        }
+    }
+    
+    @media(max-width:900px) {
+        header {
+            width: 70%;
+        }
+        .container-header .user-login {
+            display: flex;
+            margin-right: 20px;
+            margin-left: 10vw;
+        }
+        .container-section {
+            width: 200vw;
+            margin: 0 10vw;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(1, 4fr);
+            gap: 1vw;
+        }
+        .container-section img {
+            min-height: 20vw;
+            width: 100%;
+        }
+        .container-section .cards-top {
+            margin-top: 0;
+        }
+        .container-section .cards-down {
+            margin-top: 0;
+        }
+    }
+    
+    @media(max-width:690px) {
+        .carousel-item img {
+            min-width: 100%;
+            opacity: 0.6;
+        }
+        .conteudo-carousel {
+            width: 80%;
+        }
+    }
+    
+    @media(max-width:560px) {
+        .container-header .user-login {
+            align-items: center;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .container-header .user-login small {
+            white-space: nowrap
+        }
+    }
+    
+    footer {
+        position: relative;
+        border-top: 10px solid #00c2ea;
+        max-height: 10vw;
+    }
+    /*Livros*/
+    /*Pg. Livros/Acervo da biblioteca*/
+    
+    .box_nossoAcervo {
         width: 100%;
+        display: flex;
+        background: #f6f7fb;
+        padding: 4rem 0;
     }
-    .container-section .cards-top{
-        margin-top:0;
+    
+    .box_nossoAcervo .ui-container {
+        margin-top: -3.2rem;
+        display: block;
+        justify-content: center;
+        width: 102rem;
     }
-    .container-section .cards-down{
-        margin-top: 0;
+    
+    @media (max-width:700px) {
+        .box_nossoAcervo .ui-container {
+            width: 95%;
+        }
+        .box_search-site .ui-container {
+            width: 95%;
+        }
     }
-}
-@media(max-width:690px){
-    .carousel-item img{
-        min-width: 100%;
-        opacity: 0.6;
-    }
-    .conteudo-carousel{
-        width: 80%;
-    }
-}
-@media(max-width:560px){
-    .container-header .user-login {
+    
+    .menuPrincipal .ui-container {
+        max-width: 1130px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
         align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        box-sizing: border-box;
+    }
+    
+    @media (max-width:1129px) {
+        .menuPrincipal .ui-container {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+    
+    .menuPrinpicpal .ui-container ul {
         display: flex;
-        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
     }
-    .container-header .user-login small{
-       
-        white-space: nowrap
+    
+    .menuPrincipal .ui-container ul li {
+        margin-left: 35px;
+        height: 1rem;
+        color: #2e3d49;
     }
-}
-footer{
-    position: relative;
-    border-top: 10px solid #00c2ea;
-    max-height: 10vw;
-}
-
-/*Livros*/
-/*Pg. Livros/Acervo da biblioteca*/
-.Titulo_Acervo{
     
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @media (max-width:1440px) {
+        .menuPrincipal .ui-container ul li {
+            margin-left: 25px;
+        }
+        .logoBv img {
+            margin-left: 0rem;
+            width: 100%!important;
+        }
+    }
     
-}
-.Box_Livros{
-    display: flex;
-    margin: 10px; 
-    padding: 20px;
-    font-size: 30px;
-    float: right;
-    background-color:  #7cc3df; 
-    box-shadow: .2rem .2rem .5rem ; 
-    background-repeat: no-repeat;
-    border-radius: .5rem .5rem .5rem .5rem;
-    align-items: center
-
-}
-.Container_Livros{
-    border-radius: .5rem .5rem .5rem .5rem;
-    float: left;
-    margin: 5px;
-
-}
-.Container_Livros >img{
-    border-radius: .5rem .5rem .5rem .5rem;
-    width: 10rem;
-    height: 15rem;
-    position:relative;
-    display: block;
-    box-shadow: .2rem .2rem .5rem ;
-}
-.Container_Livros >a{
-  align-items: center;
-  margin-top: 1.5rem;
-  font-size: 1.8rem;
-  font-family: Montserrat,sans-serif;
-  color: #666;
-  
-}
-.Acervo_Livros {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;
-    box-shadow: .2rem .2rem .5rem ;
-  }
-  
-  .Acervo_Livros > div {
-    flex: 1 1 200px;
-    margin: 10px;
-  }
-
-  .T{
-
-
-  width: 53%;
-  height: 41.9rem;
-  background-repeat: no-repeat;
-  display: flex-end;
-  justify-content: flex-end;
-  align-items: center
-}
-
-/*teste */
-
-.box_acervo{
-    width: 100%;
-    display: flex;
-    background: #f6f7fb;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: rgb(246, 247, 251);
-    padding: 4rem 0;
-    padding-top: 4rem;
-    padding-right: 0px;
-    padding-bottom: 4rem;
-    padding-left: 0px;
-}
-.BBcontainer{
-    box-sizing: border-box;
-    max-width: 1130px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-}
-livros__lista{
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-.livros__item {
-    width: calc(25% - 23px);
-    margin: 30px 16px;
-    margin-top: 30px;
-    margin-right: 16px;
-    margin-bottom: 30px;
-    margin-left: 16px;
-    background: #fff;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px 5px 0 0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    box-shadow: 0 2px 6px rgb(0 0 0 / 16%);
-    position: relative;
-    box-sizing: border-box;
-}
-.book__stars{
-    font-size: 13px;
-    margin-right: 5px;
-    color: #d9d9d9;
-}
-@media (max-width: 1000px)
-.livros__lista {
-    padding: 0 30px;
-    padding-top: 0px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
+    @media (max-width:800px) {
+        .menuPrincipal .ui-container {
+            margin-top: 0;
+        }
+    }
+    
+    @media (max-width:500px) {
+        .menuPrincipal .ui-container ul li {
+            margin-left: 25px;
+        }
+        .logoBv img {
+            margin-left: 2.5rem;
+            width: 100%!important;
+        }
+    }
+    
+    .contrast .menuPrincipal .ui-container {
+        height: auto;
+    }
+    
+    .ui-container {
+        box-sizing: border-box;
+        max-width: 1130px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    @media (max-width:1129px) {
+        .acessibilide-topo .ui-container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    
+    @media (max-width:959px) {
+        .ui-container {
+            max-width: 880px;
+        }
+    }
+    
+    @media (max-width:800px) {
+        .ui-container {
+            max-width: 650px!important;
+        }
+    }
+    
+    .ui-container-slick {
+        max-width: 1210px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .rodape.panel .ui-container h1 img {
+        width: 50%;
+    }
+    
+    .menuPrincipal .ui-container .logoBv img {
+        width: 100%!important;
+        max-width: auto;
+        margin-left: 0!important;
+    }
+    
+    .category .ui-container {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+    
+    .search-blog .ui-container {
+        width: 102rem;
+    }
+    
+    .category .ui-container {
+        padding: 0 4px;
+    }
+    
+    @media (max-width:1024px) {
+        .box_search-site.search-blog .ui-container {
+            width: 80%;
+        }
+    }
+    
+    .category .ui-container .slider-principal .two-rows {
+        width: 20.5rem;
+        outline: 0;
+    }
+    
+    @media (max-width:500px) {
+        .ui-container {
+            max-width: 320px;
+        }
+    }
+    
+    @media (max-width:500px) {
+        .rodape .ui-container {
+            max-width: 100%;
+        }
+    }
+    
+    @media (max-width:480px) {
+        .category .ui-container {
+            padding: 0;
+        }
+        .two-rows {
+            width: 80%!important;
+            margin: 0 auto;
+        }
+    }
+    
+    .livros__lista.opaco {
+        position: relative;
+    }
+    
+    .livros__lista.opaco::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(246, 247, 251, .9);
+        z-index: 10;
+    }
+    
+    .acervo__page .livros__lista {
+        padding: 0;
+    }
+    
+    .livros__lista {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    @media (max-width:1000px) {
+        .livros__lista {
+            padding: 0 30px;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+    }
+    
+    @media (max-width:1000px) {
+        .acervo__filter {
+            height: auto;
+        }
+        .acervo__filter-row {
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        .acervo__filter-button {
+            width: 100%!important;
+            margin-right: 0!important;
+            margin-bottom: 10px;
+        }
+        .filters__list-item:nth-child(2) {
+            margin-top: 45px;
+        }
+        .filters__list-item:nth-child(3) {
+            margin-top: 90px;
+        }
+        .filters__list-item:nth-child(4) {
+            margin-top: 135px;
+        }
+        .filters__list-item:nth-child(5) {
+            margin-top: 180px;
+        }
+        .filters__lista {
+            font-size: 1.2rem;
+        }
+        .filters__lista label {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .livros__item {
+            width: 45%!important;
+            margin-right: 0!important;
+        }
+    }
+    
+    .acervo__page .livros__item:not(:nth-child(4n)) {
+        margin-right: 30px;
+    }
+    
+    .livros__item {
+        width: calc(25% - 23px);
+        margin: 30px 16px;
+        background: #fff;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+    .livros__item .book__stars {
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .acervo__page .livros__item:not(:nth-child(4n)) {
+        margin-right: 30px;
+    }
+    
+    .livros__item.epub:after,
+    .sugestoes .slider-books .slide-item-box.epub:after {
+        display: block;
+    }
+    
+    .book__thumb:after,
+    .livros__item:after,
+    .sugestoes .slider-books .slide-item-box:after {
+        content: 'EPUB';
+        position: absolute;
+        top: 181px;
+        right: 0;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-weight: 700;
+        padding-left: 17px;
+        font-size: 1rem;
+        font-family: sans-serif;
+        letter-spacing: .1em;
+        background: #56a8fe;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        display: none;
+    }
+    
+    @media (max-width:500px) {
+        .livros__item {
+            width: 100%!important;
+            margin-right: 0!important;
+        }
+        .filters__lista label {
+            width: 100%!important;
+            margin-bottom: 10px;
+        }
+        .filters__lista label {
+            width: calc(25% - 40.75px);
+            margin-bottom: 10px;
+        }
+        .label-star span {
+            margin-right: 1rem;
+        }
+    }
+    
+    .acervo-item {
+        width: 100%;
+        border-radius: 50%;
+        transition: .4s;
+        max-width: 220px;
+    }
+    
+    .acervo-item {
+        width: 100%;
+        border-radius: 50%;
+        transition: .4s;
+        max-width: 220px;
+    }
+    
+    .acervo-item:first-child {
+        max-width: 245px;
+    }
+    
+    .acervo-item .acervo-item__text {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 46px;
+        color: #2e3d49;
+    }
+    
+    .acervo-item .acervo-item__text span {
+        color: #0bcec1;
+        font-size: 34px;
+    }
+    
+    .acervo-item .cicle {
+        background-image: url("../images/cicle-min.png");
+        background-position: center;
+        background-size: cover;
+        width: 181px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .acervo-item .cicle-num {
+        font-size: 32px;
+    }
+    
+    .acervo-item .cicle p {
+        color: #7bf3eb;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 25px;
+        line-height: 32px;
+        margin: 0;
+    }
+    
+    .acervo-item .cicle span {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        margin: 0;
+        width: 160px;
+        text-align: center;
+        line-height: 18px;
+    }
+    
+    .acervo-item:first-child {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .acervo-item .cicle {
+        width: 100%;
+        height: 170px;
+    }
+    
+    @media (max-width:800px) {
+        .acervo-item {
+            max-width: 155px;
+        }
+        .acervo-item .cicle {
+            height: 155px;
+            margin-bottom: 20px;
+        }
+        .acervo-item .cicle:last-child {
+            margin-bottom: 0;
+        }
+        .acervo-row {
+            max-width: 650px;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+    
+    .contrast .livros__imagem {
+        border: .1rem solid #fff;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .livros__imagem {
+        padding: 25px 25px 15px;
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    .livros__imagem img {
+        height: 180px;
+        max-height: 100%;
+        width: auto;
+        max-width: 100%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
+    }
+    
+    .book__stars {
+        font-size: 12px;
+        margin-right: 5px;
+        color: #d9d9d9;
+    }
+    
+    .book__stars {
+        font-size: 12px;
+        margin-right: 5px;
+        color: #d9d9d9;
+    }
+    
+    .book__stars .active {
+        color: #fdc555;
+    }
+    
+    .book__stars .votos {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #666;
+        margin-left: .5rem;
+        font-style: normal;
+    }
+    
+    .book__stars {
+        font-size: 13px;
+        margin-right: 5px;
+        color: #d9d9d9;
+    }
+    
+    .livros__title {
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #666;
+        text-align: center;
+        margin-top: 10px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .livros__author {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 500;
+        color: #777;
+        text-align: center;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
