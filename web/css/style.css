@@ -554,494 +554,594 @@
     /*Livros*/
     /*Pg. Livros/Acervo da biblioteca*/
     
-    .box_nossoAcervo {
-        width: 100%;
-        display: flex;
-        background: #f6f7fb;
-        padding: 4rem 0;
+.contrast .livros__imagem {
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .acervo-item {
+    width: 100%;
+    border-radius: 50%;
+    transition: .4s;
+    max-width: 220px;
+  }
+  
+  .acervo-item:first-child {
+    max-width: 245px;
+  }
+  
+  .acervo-item .acervo-item__text {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #2e3d49;
+  }
+  
+  .acervo-item .acervo-item__text span {
+    color: #0bcec1;
+    font-size: 34px;
+  }
+  
+  .acervo-item .cicle {
+    background-image: url("../images/cicle-min.png");
+    background-position: center;
+    background-size: cover;
+    width: 181px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .acervo-item .cicle-num {
+    font-size: 32px;
+  }
+  
+  .acervo-item .cicle p {
+    color: #7bf3eb;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    line-height: 32px;
+    margin: 0;
+  }
+  
+  .acervo-item .cicle span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+    width: 160px;
+    text-align: center;
+    line-height: 18px;
+  }
+  
+  @media (max-width:1030px) {
+    .acervo-row {
+      flex-wrap: wrap;
+      max-width: 880px;
+      margin: 0 auto;
     }
-    
+  
+    .acervo-item:first-child {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .acervo-item .cicle {
+      width: 100%;
+      height: 170px;
+    }
+  
+    .cabecalho ol li {
+      margin-left: 20px;
+    }
+  }
+  
+  .ui-container {
+    box-sizing: border-box;
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media (max-width:800px) {
+    .acervo-item {
+      max-width: 155px;
+    }
+  
+    .acervo-item .cicle {
+      height: 155px;
+      margin-bottom: 20px;
+    }
+  
+    .acervo-item .cicle:last-child {
+      margin-bottom: 0;
+    }
+  
+    .acervo-row {
+      max-width: 650px;
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+  
+  .box_nossoAcervo {
+    width: 100%;
+    display: flex;
+    background: #f6f7fb;
+    padding: 4rem 0;
+  }
+  .box_nossoAcervo .ui-container {
+    margin-top: -3.2rem;
+    display: block;
+    justify-content: center;
+    width: 102rem;
+  }
+  @media (max-width:700px) {
     .box_nossoAcervo .ui-container {
-        margin-top: -3.2rem;
-        display: block;
-        justify-content: center;
-        width: 102rem;
+      width: 95%;
     }
-    
-    @media (max-width:700px) {
-        .box_nossoAcervo .ui-container {
-            width: 95%;
-        }
-        .box_search-site .ui-container {
-            width: 95%;
-        }
+  
+    .box_search-site .ui-container {
+      width: 95%;
     }
-    
-    .menuPrincipal .ui-container {
-        max-width: 1130px;
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 30px;
-        font-size: 1.3rem;
-        font-weight: 700;
-        box-sizing: border-box;
+  }
+  @media (max-width:1000px) {
+    .acervo__filter {
+      height: auto;
     }
-    
-    @media (max-width:1129px) {
-        .menuPrincipal .ui-container {
-            padding-right: 20px;
-            padding-left: 20px;
-        }
+  
+    .acervo__filter-row {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
     }
-    
-    .menuPrinpicpal .ui-container ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  
+    .acervo__filter-button {
+      width: 100%!important;
+      margin-right: 0!important;
+      margin-bottom: 10px;
     }
-    
-    .menuPrincipal .ui-container ul li {
-        margin-left: 35px;
-        height: 1rem;
-        color: #2e3d49;
+  
+    .filters__list-item:nth-child(2) {
+      margin-top: 45px;
     }
-    
-    @media (max-width:1440px) {
-        .menuPrincipal .ui-container ul li {
-            margin-left: 25px;
-        }
-        .logoBv img {
-            margin-left: 0rem;
-            width: 100%!important;
-        }
+  
+    .filters__list-item:nth-child(3) {
+      margin-top: 90px;
     }
-    
-    @media (max-width:800px) {
-        .menuPrincipal .ui-container {
-            margin-top: 0;
-        }
+  
+    .filters__list-item:nth-child(4) {
+      margin-top: 135px;
     }
-    
-    @media (max-width:500px) {
-        .menuPrincipal .ui-container ul li {
-            margin-left: 25px;
-        }
-        .logoBv img {
-            margin-left: 2.5rem;
-            width: 100%!important;
-        }
+  
+    .filters__list-item:nth-child(5) {
+      margin-top: 180px;
     }
-    
-    .contrast .menuPrincipal .ui-container {
-        height: auto;
+  
+    .filters__lista {
+      font-size: 1.2rem;
     }
-    
-    .ui-container {
-        box-sizing: border-box;
-        max-width: 1130px;
-        width: 100%;
-        margin: 0 auto;
+  
+    .filters__lista label {
+      width: 100%;
+      margin-bottom: 5px;
     }
-    
-    @media (max-width:1129px) {
-        .acessibilide-topo .ui-container {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }
-    
-    @media (max-width:959px) {
-        .ui-container {
-            max-width: 880px;
-        }
-    }
-    
-    @media (max-width:800px) {
-        .ui-container {
-            max-width: 650px!important;
-        }
-    }
-    
-    .ui-container-slick {
-        max-width: 1210px;
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .rodape.panel .ui-container h1 img {
-        width: 50%;
-    }
-    
-    .menuPrincipal .ui-container .logoBv img {
-        width: 100%!important;
-        max-width: auto;
-        margin-left: 0!important;
-    }
-    
-    .category .ui-container {
-        max-width: 90%;
-        padding: 0 20px;
-    }
-    
-    .search-blog .ui-container {
-        width: 102rem;
-    }
-    
-    .category .ui-container {
-        padding: 0 4px;
-    }
-    
-    @media (max-width:1024px) {
-        .box_search-site.search-blog .ui-container {
-            width: 80%;
-        }
-    }
-    
-    .category .ui-container .slider-principal .two-rows {
-        width: 20.5rem;
-        outline: 0;
-    }
-    
-    @media (max-width:500px) {
-        .ui-container {
-            max-width: 320px;
-        }
-    }
-    
-    @media (max-width:500px) {
-        .rodape .ui-container {
-            max-width: 100%;
-        }
-    }
-    
-    @media (max-width:480px) {
-        .category .ui-container {
-            padding: 0;
-        }
-        .two-rows {
-            width: 80%!important;
-            margin: 0 auto;
-        }
-    }
-    
-    .livros__lista.opaco {
-        position: relative;
-    }
-    
-    .livros__lista.opaco::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(246, 247, 251, .9);
-        z-index: 10;
-    }
-    
-    .acervo__page .livros__lista {
-        padding: 0;
-    }
-    
-    .livros__lista {
-        display: -ms-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
-    
-    @media (max-width:1000px) {
-        .livros__lista {
-            padding: 0 30px;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        }
-    }
-    
-    @media (max-width:1000px) {
-        .acervo__filter {
-            height: auto;
-        }
-        .acervo__filter-row {
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        }
-        .acervo__filter-button {
-            width: 100%!important;
-            margin-right: 0!important;
-            margin-bottom: 10px;
-        }
-        .filters__list-item:nth-child(2) {
-            margin-top: 45px;
-        }
-        .filters__list-item:nth-child(3) {
-            margin-top: 90px;
-        }
-        .filters__list-item:nth-child(4) {
-            margin-top: 135px;
-        }
-        .filters__list-item:nth-child(5) {
-            margin-top: 180px;
-        }
-        .filters__lista {
-            font-size: 1.2rem;
-        }
-        .filters__lista label {
-            width: 100%;
-            margin-bottom: 5px;
-        }
-        .livros__item {
-            width: 45%!important;
-            margin-right: 0!important;
-        }
-    }
-    
-    .acervo__page .livros__item:not(:nth-child(4n)) {
-        margin-right: 30px;
-    }
-    
+  
     .livros__item {
-        width: calc(25% - 23px);
-        margin: 30px 16px;
-        background: #fff;
-        border-radius: 5px 5px 0 0;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
-        position: relative;
-        box-sizing: border-box;
+      width: 45%!important;
+      margin-right: 0!important;
     }
-    
-    .livros__item .book__stars {
-        -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center;
+  }
+  
+  .acervo__filter-label {
+    font-size: 1.4rem;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    top: -29px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .acervo__filter-row {
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .filters__list {
+    position: absolute;
+    left: 15px;
+    top: 55px;
+    width: calc(100% - 30px);
+    z-index: 25;
+  }
+  
+  .livros__lista.opaco {
+    position: relative;
+  }
+  
+  .filters__list-item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    padding: 20px;
+    display: none;
+  }
+  
+  .filters__title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #47484a;
+    margin-bottom: 20px;
+  }
+  
+  .filters__lista {
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .filters__lista label input {
+    display: none;
+  }
+  
+  .filters__apply {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    color: #55a8fd;
+    transition: .4s;
+  }
+  
+  .filters__apply:hover {
+    color: #288ff9;
+  }
+  
+  .filters__lista label .label {
+    width: 100%;
+    font-size: 12px;
+    color: #47484a;
+    line-height: 20px;
+    padding: 6px 10px;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .filters__lista label .deactive {
+    color: #eee;
+  }
+  
+  .filters__lista label input:checked~.label .fa-times {
+    display: block;
+  }
+  
+  .bookbox__button.active i {
+    background-image: linear-gradient(to bottom left,#98cafd,#66b0fd);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .filters__lista label input:checked~.label {
+    background: #d4e9ff;
+    color: #55a8fd;
+  }
+  
+  .livros__lista.opaco::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(246,247,251,.9);
+    z-index: 10;
+  }
+  
+  .filters__lista label {
+    width: calc(25% - 40.75px);
+    margin-bottom: 10px;
+    margin-right: 4rem;
+  }
+  
+  .filters__lista .label-star {
+    width: calc(18% - 26.75px);
+  }
+  
+  .filters__footer {
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #cbcbcd;
+  }
+  
+  .filters__clear {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #aeafb3;
+    cursor: pointer;
+    transition: .4s;
+  }
+  
+  .filters__clear:hover {
+    color: #333;
+  }
+  
+  .filters__lista label .label .fa-times {
+    display: none;
+  }
+  
+  .acervo__filter-button:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  .acervo__filter-button {
+    width: 10px;
+    height: 34px;
+    line-height: 34px;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    border-radius: 4px;
+    background: #efefef;
+    color: #47484a;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    padding: 0 15px;
+    transition: .4s;
+  }
+  
+  .acervo__filter-button span {
+    width: 10px;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    display: flex;
+  }
+  
+  .acervo__filter-button.active {
+    background: #afafaf;
+    color: #fff;
+  }
+  
+  .acervo__filter-button .fa-sort-down {
+    position: relative;
+    top: -3px;
+  }
+  
+  .acervo__filter-button .fa-star.active {
+    color: #fdc555;
+  }
+  
+  .acervo__list-info {
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .acervo__exibindo {
+    font-size: 13px;
+    line-height: 20px;
+    color: #777;
+  }
+  
+  .acervo__ordenacao {
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .acervo__orderby {
+    border: 1px solid #aeafb3;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 40px;
+    font-weight: 600;
+    width: 18rem;
+    background-color: transparent;
+    margin-left: 20px;
+    text-indent: 15px;
+    color: #000;
+  }
+  
+  .acervo__orderby option {
+    margin: 2rem;
+    font-size: 12px;
+  }
+  
+  .acervo__orderby:hover {
+    color: #26333d;
+  }
+  */
+  .acervo__page .livros__lista {
+    padding: 0;
+  }
+  
+  .livros__lista {
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width:1000px) {
+    .livros__lista {
+      padding: 0 30px;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
     }
-    
-    .acervo__page .livros__item:not(:nth-child(4n)) {
-        margin-right: 30px;
+  }
+  
+  .acervo__page .livros__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+  
+  .livros__item {
+    width: calc(25% - 23px);
+    margin: 30px 16px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,.16);
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .livros__imagem {
+    padding: 25px 25px 15px;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .livros__imagem img {
+    height: 180px;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    box-shadow: 0 2px 6px rgba(0,0,0,.16);
+  }
+  
+  .livros__title {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .livros__author {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .acervo__page .livros__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+  
+  .livros__item.epub:after,
+  .sugestoes .slider-books .slide-item-box.epub:after {
+    display: block;
+  }
+  .book__thumb:after,
+  .livros__item:after,
+  .sugestoes .slider-books .slide-item-box:after {
+    content: 'EPUB';
+    position: absolute;
+    top: 181px;
+    right: 0;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+    padding-left: 17px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    letter-spacing: .1em;
+    background: #56a8fe;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: none;
+  }
+  @media (max-width:400px) {
+    .acervo-row {
+      max-width: 350px;
     }
-    
-    .livros__item.epub:after,
-    .sugestoes .slider-books .slide-item-box.epub:after {
-        display: block;
-    }
-    
-    .book__thumb:after,
-    .livros__item:after,
-    .sugestoes .slider-books .slide-item-box:after {
-        content: 'EPUB';
-        position: absolute;
-        top: 181px;
-        right: 0;
-        width: 60px;
-        height: 30px;
-        line-height: 30px;
-        color: #fff;
-        font-weight: 700;
-        padding-left: 17px;
-        font-size: 1rem;
-        font-family: sans-serif;
-        letter-spacing: .1em;
-        background: #56a8fe;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        display: none;
-    }
-    
-    @media (max-width:500px) {
-        .livros__item {
-            width: 100%!important;
-            margin-right: 0!important;
-        }
-        .filters__lista label {
-            width: 100%!important;
-            margin-bottom: 10px;
-        }
-        .filters__lista label {
-            width: calc(25% - 40.75px);
-            margin-bottom: 10px;
-        }
-        .label-star span {
-            margin-right: 1rem;
-        }
-    }
-    
+  
     .acervo-item {
-        width: 100%;
-        border-radius: 50%;
-        transition: .4s;
-        max-width: 220px;
+      margin-bottom: 10px;
     }
-    
-    .acervo-item {
-        width: 100%;
-        border-radius: 50%;
-        transition: .4s;
-        max-width: 220px;
+  }
+  @media (max-width:500px) {
+    .ui-container {
+      max-width: 320px;
     }
-    
-    .acervo-item:first-child {
-        max-width: 245px;
+  }
+  @media (max-width:500px) {
+    .livros__item {
+      width: 100%!important;
+      margin-right: 0!important;
     }
-    
-    .acervo-item .acervo-item__text {
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 46px;
-        color: #2e3d49;
+  
+    .filters__lista label {
+      width: 100%!important;
+      margin-bottom: 10px;
     }
-    
-    .acervo-item .acervo-item__text span {
-        color: #0bcec1;
-        font-size: 34px;
+  
+    .filters__lista label {
+      width: calc(25% - 40.75px);
+      margin-bottom: 10px;
     }
-    
-    .acervo-item .cicle {
-        background-image: url("../images/cicle-min.png");
-        background-position: center;
-        background-size: cover;
-        width: 181px;
-        height: 180px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+  
+    .label-star span {
+      margin-right: 1rem;
     }
-    
-    .acervo-item .cicle-num {
-        font-size: 32px;
-    }
-    
-    .acervo-item .cicle p {
-        color: #7bf3eb;
-        font-size: 25px;
-        font-weight: 700;
-        line-height: 25px;
-        line-height: 32px;
-        margin: 0;
-    }
-    
-    .acervo-item .cicle span {
-        font-size: 18px;
-        color: #fff;
-        font-weight: 500;
-        margin: 0;
-        width: 160px;
-        text-align: center;
-        line-height: 18px;
-    }
-    
-    .acervo-item:first-child {
-        max-width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .acervo-item .cicle {
-        width: 100%;
-        height: 170px;
-    }
-    
-    @media (max-width:800px) {
-        .acervo-item {
-            max-width: 155px;
-        }
-        .acervo-item .cicle {
-            height: 155px;
-            margin-bottom: 20px;
-        }
-        .acervo-item .cicle:last-child {
-            margin-bottom: 0;
-        }
-        .acervo-row {
-            max-width: 650px;
-            width: 100%;
-            justify-content: space-around;
-        }
-    }
-    
-    .contrast .livros__imagem {
-        border: .1rem solid #fff;
-        border-radius: .5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .livros__imagem {
-        padding: 25px 25px 15px;
-        display: -ms-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    
-    .livros__imagem img {
-        height: 180px;
-        max-height: 100%;
-        width: auto;
-        max-width: 100%;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
-    }
-    
-    .book__stars {
-        font-size: 12px;
-        margin-right: 5px;
-        color: #d9d9d9;
-    }
-    
-    .book__stars {
-        font-size: 12px;
-        margin-right: 5px;
-        color: #d9d9d9;
-    }
-    
-    .book__stars .active {
-        color: #fdc555;
-    }
-    
-    .book__stars .votos {
-        font-weight: 600;
-        font-size: 1.2rem;
-        color: #666;
-        margin-left: .5rem;
-        font-style: normal;
-    }
-    
-    .book__stars {
-        font-size: 13px;
-        margin-right: 5px;
-        color: #d9d9d9;
-    }
-    
-    .livros__title {
-        padding: 0 20px;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 700;
-        color: #666;
-        text-align: center;
-        margin-top: 10px;
-        display: block;
-        text-decoration: none;
-    }
-    
-    .livros__author {
-        margin-top: 10px;
-        font-size: 12px;
-        line-height: 17px;
-        font-weight: 500;
-        color: #777;
-        text-align: center;
-        margin-bottom: 20px;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-    }
+  }
+     
