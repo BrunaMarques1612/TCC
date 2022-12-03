@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="img\logobiblioteca.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens\logobiblioteca.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.css">
@@ -24,7 +24,7 @@
             <a href="index.php"><img src="imagens\logobiblioteca.png" alt="" width="170px" height="100px"></a>
             <div class="user-login">
                 <a href="perfil.php"><small><?php echo ($_SESSION['nome']); ?></small></a>
-                <img src="img\logo_usuario.png" width="60px" alt="">
+                <img src="imagens\logo_usuario.png" width="60px" alt="">
                 <a href="logout.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M16 10v-5l8 7-8 7v-5h-8v-4h8zm-16-8v20h14v-2h-12v-16h12v-2h-14z" />
                     </svg></a>

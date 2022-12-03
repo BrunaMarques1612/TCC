@@ -43,9 +43,6 @@
             <p>
               <a href="evetos.php" class="text-reset">Eventos</a>
             </p>
-            <p>
-              <a href="contato.php" class="text-reset">Contato</a>
-            </p>
           </div>
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">

@@ -37,9 +37,6 @@
           <a class="nav-link" href="eventos.php">EVENTOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contato.php">CONTATO</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="login.php">ENTRAR</a>
         </li>
       </ul>
