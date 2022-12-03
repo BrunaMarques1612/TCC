@@ -24,7 +24,7 @@ include 'includes/nav-bar.php';
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <h1>Acervo Lino de Mattos</h1>
+        <h1>Acervo Lima de Matos</h1>
 
     <div class="box_nossoAcervo">
     <div class="ui-container">
