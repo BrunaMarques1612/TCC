@@ -25,19 +25,19 @@ include 'includes/nav-bar.php';
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/carrossel/biblioteca5.jpeg" class="d-block w-100" alt="..." height="900vw">
+            <img src="imagens/carrossel/biblioteca5.jpeg" class="d-block w-100" alt="..." height="900vw">
           </div>
           <div class="carousel-item">
-            <img src="img/carrossel/biblioteca2.jpeg" class="d-block w-100" alt="..." height="900vw">
+            <img src="imagens/carrossel/biblioteca2.jpeg" class="d-block w-100" alt="..." height="900vw">
           </div>
           <div class="carousel-item">
-            <img src="img/carrossel/biblioteca3.jpeg" class="d-block w-100" alt="..." height="900vw">
+            <img src="imagens/carrossel/biblioteca3.jpeg" class="d-block w-100" alt="..." height="900vw">
           </div>
           <div class="carousel-item">
-            <img src="img/carrossel/biblioteca4.jpeg" class="d-block w-100" alt="..." height="900vw">
+            <img src="imagens/carrossel/biblioteca4.jpeg" class="d-block w-100" alt="..." height="900vw">
           </div>
           <div class="carousel-item">
-            <img src="img/carrossel/biblioteca1.jpeg" class="d-block w-100" alt="..." height="900vw">
+            <img src="imagens/carrossel/biblioteca1.jpeg" class="d-block w-100" alt="..." height="900vw">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

@@ -21,7 +21,7 @@
 <body>
     <header>
         <div class="container-header">
-            <a href="index.php"><img src="img\logobiblioteca.png" alt="" width="170px" height="100px"></a>
+            <a href="index.php"><img src="imagens\logobiblioteca.png" alt="" width="170px" height="100px"></a>
             <div class="user-login">
                 <a href="perfil.php"><small><?php echo ($_SESSION['nome']); ?></small></a>
                 <img src="img\logo_usuario.png" width="60px" alt="">

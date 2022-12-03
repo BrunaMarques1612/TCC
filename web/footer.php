@@ -3,7 +3,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +44,7 @@
               <a href="eventos.php" class="text-reset">Eventos</a>
             </p>
             <p>
-              <a href="contato" class="text-reset">Contato</a>
+              <a href="contato.php" class="text-reset">Contato</a>
             </p>
           </div>
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
