@@ -1,15 +1,10 @@
 <?php
-//include('protect.php');
-?>
-
-<?php
 //HEADER
 include 'includes/header.php';
 //NAV-BAR
 include 'includes/nav-bar.php';
 ?>
 <title>Biblioteca Lino de Mattos - Sobre a Biblioteca </title>
-
 <body>
   <?php
   //PRELOARD
@@ -20,8 +15,6 @@ include 'includes/nav-bar.php';
     <div class="container-noticias">
       <div class="grid-noticias1">
         <img src="img\Bibliotecas2.jpg" alt="">
-
-
       </div>
       <div class="grid-noticias2">
         <img src="img\livros1.jpg" alt="">
@@ -54,5 +47,5 @@ include 'includes/nav-bar.php';
   include 'includes/footer.php';
   ?>
 </body>
-
 </html>
+

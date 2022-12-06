@@ -1,20 +1,13 @@
 <?php
-//include('protect.php');
-?>
-
-<?php
 //HEADER
 include 'includes/header.php';
 //NAV-BAR
 include 'includes/nav-bar.php';
 ?>
-
 <head>
-  <title>Biblioteca Lino de Matos - Home</title>
-
+  <title>Biblioteca Lino de Mattos - Home</title>
   <link rel="manifest" href="pwa/manifest.webmanifest">
 </head>
-
 <body>
   <?php
   //PRELOARD

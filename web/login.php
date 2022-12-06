@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca Lino de Mattos -Login</title>
+    <title>Biblioteca Lino de Mattos - Login</title>
     <link rel="icon" type="image/png" sizes="16x16"  href="img\logobiblioteca.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -12,7 +12,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@700&family=Lato&display=swap');
     </style>
-
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,10 +58,8 @@
     <script>
         const passwordInput = document.getElementById("senha");
         const eyeSvg= document.getElementById("eyeSvg");
-
         function eyeCLick(){
             let inputTypeIsPassword = passwordInput.type == "password"
-
             if (inputTypeIsPassword){
                 showPassword();
             } else if(passwordInput.type == "text"){

@@ -1,6 +1,5 @@
 <?php
     session_start();
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -29,7 +28,6 @@
 <!-- fim do preloader --> 
     <form class="container-login" action="confirmar-usuario.php" method="post" id="form">
     <div class="top-login login-user">
-        
         <h1>RECUPERE SUA SENHA</h1>
         <small>Email:</small>
         <?php

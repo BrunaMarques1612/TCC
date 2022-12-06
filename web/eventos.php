@@ -1,15 +1,10 @@
 <?php
-//include('protect.php');
-?>
-
-<?php
 //HEADER
 include 'includes/header.php';
 //NAV-BAR
 include 'includes/nav-bar.php';
 ?>
-<title>Biblioteca Lino de Matos - Calendário </title>
-
+<title>Biblioteca Lino de Mattos - Calendário </title>
 <head>
 	<meta charset='utf-8' />
 	<link href='eventos/css/core/main.min.css' rel='stylesheet' />
@@ -22,7 +17,6 @@ include 'includes/nav-bar.php';
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
 			var calendarEl = document.getElementById('calendar');
-
 			var calendar = new FullCalendar.Calendar(calendarEl, {
 				locale: 'pt-br',
 				plugins: ['interaction', 'dayGrid'],
@@ -35,7 +29,6 @@ include 'includes/nav-bar.php';
 					};
 				}
 			});
-
 			calendar.render();
 		});
 	</script>
@@ -46,23 +39,17 @@ include 'includes/nav-bar.php';
 			font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 			font-size: 14px;
 		}
-
 		#calendar {
 			max-width: 900px;
 			margin: 0 auto;
 		}
 	</style>
 </head>
-
 <body>
-
 	<div id='calendar'></div>
-
 	<?php
 	//FOOTER
 	include 'includes/footer.php';
 	?>
-
 </body>
-
 </html>

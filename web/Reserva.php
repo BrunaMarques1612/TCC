@@ -1,36 +1,27 @@
 <?php
-//include('protect.php');
+    session_start();
 ?>
-
 <?php
 //HEADER
 include 'includes/header.php';
 //NAV-BAR
 include 'includes/nav-bar.php';
 ?>
-<title>Biblioteca Lino de Matos - Livros</title>
-
+<title>Biblioteca Lino de Mattos - Reserva</title>
 <body>
   <?php
   //PRELOARD
   include 'includes/preloard.php';
   ?>
-  
   <?php
   //Livros
   ?>
 <html>
 <head>
-
     <link rel="stylesheet" href="style.css">
-
     <title>Document</title>
 </head>
 <body>
-    
-
-
-
 <section class="destaques_nossoAcervo book__header">
     <div class="book__header-bg" style="background-image: url(https://staticbv.am4.com.br/publicacoes/6/thumbs/thumbnail_397_x_595.jpg);"></div>
 

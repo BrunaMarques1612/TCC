@@ -23,11 +23,10 @@
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">
-              <a href="index.php"><img src="img\logobiblioteca.png" alt="" width="170px" height="100px"></a>
+              <a href="index.php"><img src="imagens\logobiblioteca.png" alt="" width="170px" height="100px"></a>
             </h6>
             <p>
-            "Livros são sonhos que seguramos com as mãos." 
-            <br><b>(Neil Gaiman)</b></br>
+            "Livros são sonhos que seguramos com as mãos." <b>(Neil Gaiman)</b>
             </p>
           </div>
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -41,10 +40,7 @@
               <a href="sobre.php" class="text-reset">Sobre</a>
             </p>
             <p>
-              <a href="eventos.php" class="text-reset">Eventos</a>
-            </p>
-            <p>
-              <a href="contato.php" class="text-reset">Contato</a>
+              <a href="evetos.php" class="text-reset">Eventos</a>
             </p>
           </div>
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -52,19 +48,20 @@
             Redes Sociais 
             </h6>
             <p>
-              <a href="https://www.facebook.com/people/Emef-Senador-Lino-de-Mattos-SP/100063798063215/" class="text-reset"  target="_blank" rel="noopener noreferrer"></p>Facebook</a>
+              <a href="https://www.facebook.com/people/Emef-Senador-Lino-de-Mattos-SP/100063798063215/" class="text-reset">Facebook</a>
             </p>
             <p>
-              <a href="https://www.instagram.com/linodemattos/" class="text-reset" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.instagram.com/linodemattos/" class="text-reset">Instagram</a>
             </p>
           </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"> -->
+          <div class="col-md-4 col-lg-3 col-xl-5 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
-            <p><i class="fas fa-home me-3 text-grayish"></i>Rua Sapupira, 1005 - JD. Pedro José Nunes - Cep: 08061-440</p>
-            <p><i class="fas fa-envelope me-3 text-grayish"></i>Email: emeflmattos@sme.prefeitura.sp.gov.br
+            <p><i class="fas fa-home me-1 text-grayish"></i>Rua Sapupira, 1005 - JD. Pedro José Nunes - Cep: 08061-440</p>
+            <p><i class="fas fa-envelope me-1 text-grayish"></i>Email: emeflmattos@sme.prefeitura.sp.gov.br
             </p>
-            <p><i class="fas fa-phone me-3 text-grayish"></i>Telefone: (11) 2546-7825 </p>
-            <p><i class="fas fa-print me-3 text-grayish"></i> Dir. Luiz: (11) 94902-9516</p>
+            <p><i class="fas fa-phone me-1 text-grayish"></i>Telefone: (11) 2546-7825 </p>
+            <p><i class="fas fa-print me-1 text-grayish"></i> Dir. Luiz: (11) 94902-9516</p>
           </div>
         </div>
       </div>

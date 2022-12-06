@@ -61,7 +61,6 @@
 
         function eyeCLick(){
             let inputTypeIsPassword = passwordInput.type == "password"
-
             if (inputTypeIsPassword){
                 showPassword();
             } else if(passwordInput.type == "text"){
