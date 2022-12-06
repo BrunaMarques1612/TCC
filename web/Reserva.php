@@ -22,7 +22,8 @@ include 'includes/nav-bar.php';
 <html>
 <head>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -78,7 +79,7 @@ include 'includes/nav-bar.php';
 <section class="detalhe-area-comentario">
     <div class="ui-container">
         <h1>Comentários mais recentes sobre este livro</h1>
-
+        <button class="button"><span>click </span></button>
             </div>
     </div>
 </section>
