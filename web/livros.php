@@ -8,7 +8,7 @@ include 'includes/header.php';
 //NAV-BAR
 include 'includes/nav-bar.php';
 ?>
-<title>Biblioteca Lino de Matos - Livros</title>
+<title>Biblioteca Lino de Mattos - Livros</title>
 
 <body>
   <?php
@@ -24,7 +24,7 @@ include 'includes/nav-bar.php';
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <h1>Acervo Lima de Matos</h1>
+        <h1>Acervo Lino de Mattos</h1>
 
     <div class="box_nossoAcervo">
     <div class="ui-container">
