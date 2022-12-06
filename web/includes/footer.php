@@ -58,11 +58,11 @@
           <!-- <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"> -->
           <div class="col-md-4 col-lg-3 col-xl-5 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
-            <p><i class="fas fa-home me-3 text-grayish"></i>Rua Sapupira, 1005 - JD. Pedro José Nunes - Cep: 08061-440</p>
-            <p><i class="fas fa-envelope me-3 text-grayish"></i>Email: emeflmattos@sme.prefeitura.sp.gov.br
+            <p><i class="fas fa-home me-1 text-grayish"></i>Rua Sapupira, 1005 - JD. Pedro José Nunes - Cep: 08061-440</p>
+            <p><i class="fas fa-envelope me-1 text-grayish"></i>Email: emeflmattos@sme.prefeitura.sp.gov.br
             </p>
-            <p><i class="fas fa-phone me-3 text-grayish"></i>Telefone: (11) 2546-7825 </p>
-            <p><i class="fas fa-print me-3 text-grayish"></i> Dir. Luiz: (11) 94902-9516</p>
+            <p><i class="fas fa-phone me-1 text-grayish"></i>Telefone: (11) 2546-7825 </p>
+            <p><i class="fas fa-print me-1 text-grayish"></i> Dir. Luiz: (11) 94902-9516</p>
           </div>
         </div>
       </div>
