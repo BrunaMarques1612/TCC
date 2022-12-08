@@ -5,6 +5,7 @@ include 'includes/header.php';
 include 'includes/nav-bar.php';
 ?>
 <title>Biblioteca Lino de Mattos - Sobre a Biblioteca </title>
+
 <body>
   <?php
   //PRELOARD
@@ -14,30 +15,34 @@ include 'includes/nav-bar.php';
   <main>
     <div class="container-noticias">
       <div class="grid-noticias1">
-        <img src="img\Bibliotecas2.jpg" alt="">
+        <img src="img\escola.png" alt="">
       </div>
       <div class="grid-noticias2">
-        <img src="img\livros1.jpg" alt="">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor nisi itaque quos autem, recusandae quam nostrum ratione vel sunt! Rem, eveniet ratione quasi quidem a vitae nulla accusantium earum.</p>
+        <h3>Curiosidades e Informações</h3>
+        <p>O colegio Lino de Mattos é uma escola publica, localizada no Jd - Praça Rosa de Pedro José Nunes, R.
+          Sapupira, 1005, há 45 anos. Sendo um centro de aprendizagem, de vida e de
+          ação humana.
+        </p>
       </div>
       <div class="grid-noticias3">
-        <img src="img\livros1.jpg" alt="">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis earum deleniti libero non quibusdam obcaecati tempora eius soluta repellat! Dolore fugiat officia ipsa culpa in non unde id corrupti.</p>
+        <h3></h3>
+        <p>O Colégio tem o seu compromisso educacional pautada em uma proposta educativa e realista, que considera o
+          aluno sujeito
+          de uma educação transformadora.</p>
       </div>
       <div class="grid-noticias4">
-        <img src="img\livros1.jpg" alt="">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ab aperiam, consectetur debitis provident delectus fugit fugiat mollitia laborum facilis voluptates. Quam labore beatae soluta itaque iure possimus atque ratione?</p>
+        <h3></h3>
+        <p>
+          Num contexto de constante reflexão, pesquisa, estudo e capacitação dos educadores, o Colégio Lino de Mattos
+          oferece um ambiente adequado, para que aconteça a evolução gradativa e harmonica de seus alunos, acolhendo e
+          orientando-os, a fim de que desenvolvam habilidades, adquiram competências, vivenciem a solidariedade e o
+          exercício da cidadania.</p>
       </div>
       <div class="grid-noticias5">
-        <img src="img\livros1.jpg" alt="">
+        <img src="img\propaganda.png" alt="">
         <div class="noticias-fim">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis omnis sed voluptatum. Quis nam dolorum est iste quidem, vero veritatis excepturi. Velit dolore natus molestias? Vitae quaerat eius dignissimos temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at quisquam non accusamus, laborum rem deserunt distinctio molestiae doloremque molestias suscipit animi quo saepe! Similique incidunt asperiores eius id praesentium.
-            Minima nostrum rerum doloremque laudantium dolores voluptate asperiores esse, vitae atque culpa nesciunt non! Omnis repudiandae nulla, error vel quae aliquam libero vitae autem ipsa beatae! At sunt harum ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum mollitia ipsa quod doloribus ex itaque blanditiis animi eaque eius dignissimos! Corrupti totam repellendus itaque suscipit fuga nam, quos architecto nobis.
-            Esse, similique dolorum.</p>
+          <h3>Cursos extracurriculares</h3>
+          <p>A escola Linu de Mattos incentiva e recomenda cursos de línguas estrangeiras </p>
         </div>
       </div>
     </div>
@@ -47,5 +52,5 @@ include 'includes/nav-bar.php';
   include 'includes/footer.php';
   ?>
 </body>
-</html>
 
+</html>

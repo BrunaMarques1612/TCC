@@ -50,7 +50,7 @@
        <hr>
         <div class="criarConta">
             <h3>É novo por aqui?</h3>
-            <a href="signup.php"><strong><h4 id="criar-conta">CRIAR CONTA</h4></strong></a>
+            <a href="criarconta.php"><strong><h4 id="criar-conta">CRIAR CONTA</h4></strong></a>
         </div>
         <a href="login-professor.php"><p class="entrada-administrador">Entrar como Professor</p></a>
     </form>
