@@ -20,15 +20,13 @@ include 'includes/nav-bar.php';
       <div class="grid-noticias2">
         <h3>Curiosidades e Informações</h3>
         <p>O colegio Lino de Mattos é uma escola publica, localizada no Jd - Praça Rosa de Pedro José Nunes, R.
-          Sapupira, 1005, há 45 anos. Sendo um centro de aprendizagem, de vida e de
-          ação humana.
+          Sapupira, 1005, há 45 anos. Sendo um centro de aprendizagem, de vida e de ação humana.
         </p>
       </div>
       <div class="grid-noticias3">
         <h3></h3>
         <p>O Colégio tem o seu compromisso educacional pautada em uma proposta educativa e realista, que considera o
-          aluno sujeito
-          de uma educação transformadora.</p>
+          aluno sujeito de uma educação transformadora.</p>
       </div>
       <div class="grid-noticias4">
         <h3></h3>
@@ -42,7 +40,7 @@ include 'includes/nav-bar.php';
         <img src="img\propaganda.png" alt="">
         <div class="noticias-fim">
           <h3>Cursos extracurriculares</h3>
-          <p>A escola Linu de Mattos incentiva e recomenda cursos de línguas estrangeiras </p>
+          <p>A escola Lino de Mattos incentiva e recomenda cursos de Línguas Estrangeiras </p>
         </div>
       </div>
     </div>
