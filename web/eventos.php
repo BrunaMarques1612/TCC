@@ -5,6 +5,7 @@ include 'includes/header.php';
 include 'includes/nav-bar.php';
 ?>
 <title>Biblioteca Lino de Mattos - Calendário </title>
+
 <head>
 	<meta charset='utf-8' />
 	<link href='eventos/css/core/main.min.css' rel='stylesheet' />
@@ -39,17 +40,24 @@ include 'includes/nav-bar.php';
 			font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 			font-size: 14px;
 		}
+
 		#calendar {
 			max-width: 900px;
 			margin: 0 auto;
 		}
 	</style>
 </head>
+
 <body>
+	<?php
+	//PRELOARD
+	include 'includes/preloard.php';
+	?>
 	<div id='calendar'></div>
 	<?php
 	//FOOTER
 	include 'includes/footer.php';
 	?>
 </body>
+
 </html>

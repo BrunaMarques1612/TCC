@@ -1,5 +1,5 @@
  <?php
-    session_start();
+    /*session_start();
     include_once('conexao.php');
 
     $nome = mysqli_real_escape_string($conn, trim($_POST['nome']));

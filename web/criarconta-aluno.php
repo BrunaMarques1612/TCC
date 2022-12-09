@@ -1,5 +1,34 @@
 <?php
-session_start();
+
+if (isset($_POST['submit'])) {
+    // print_r('Nome: ' . $_POST['nome']);
+    // print_r('<br>');
+    // print_r('Email: ' . $_POST['email']);
+    // print_r('<br>');
+    // print_r('Telefone: ' . $_POST['telefone']);
+    // print_r('<br>');
+    // print_r('Sexo: ' . $_POST['genero']);
+    // print_r('<br>');
+    // print_r('Data de nascimento: ' . $_POST['data_nascimento']);
+    // print_r('<br>');
+    // print_r('Cidade: ' . $_POST['cidade']);
+    // print_r('<br>');
+    // print_r('Estado: ' . $_POST['estado']);
+    // print_r('<br>');
+    // print_r('Endereço: ' . $_POST['endereco']);
+
+    include_once('conexao.php');
+
+    $nome = $_POST['nome'];
+    $senha = $_POST['senha'];
+    $ra = $_POST['ra'];
+
+    $result = mysqli_query($conexao, "INSERT INTO aluno(nome,senha,ra) 
+        VALUES ('$nome','$senha','$ra')");
+
+    header('Location: login.php');
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -79,15 +108,18 @@ session_start();
             color: dodgerblue;
         }
 
-        #data_nascimento {
+        #submit {
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 100%;
             border: none;
-            padding: 8px;
-            border-radius: 10px;
-            outline: none;
+            padding: 15px;
+            color: white;
             font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
         }
 
-        #submit {
+        button {
             background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
             width: 100%;
             border: none;
@@ -105,59 +137,31 @@ session_start();
 </head>
 
 <body>
-    <a href="login.php">Voltar</a>
-    <form action="acesso.php" class="container-criar-conta" method="post" id="form">
-        <div class="top-login">
-            <div class="container-message-user">
-            </div>
-            <div class="box">
-                <fieldset>
-                    <legend><b> Criar Conta </b></legend>
-                    <?php
-                    if (isset($_SESSION['campos_vazios'])) {
-                        echo ($_SESSION['campos_vazios']);
-                        unset($_SESSION['campos_vazios']);
-                    }
-                    if (isset($_SESSION['status_cadastro'])) {
-                        echo ($_SESSION['status_cadastro']);
-                        unset($_SESSION['status_cadastro']);
-                    }
-                    if (isset($_SESSION['usuario_existe'])) {
-                        echo ($_SESSION['usuario_existe']);
-                        unset($_SESSION['usuario_existe']);
-                    }
-                    ?>
-                    <br>
-                    <div class="inputBox">
-                        <input type="text" name="nome" id="nome" class="inputUser" required>
-                        <label for="nome" class="labelInput">Nome completo</label>
-                    </div>
-                    <br>
-                    <div class="inputBox">
-                        <input type="password" name="senha" id="senha" class="inputUser" required>
-                        <label for="senha" class="labelInput">Senha</label>
-                    </div>
-                    <br><br>
-                    <div class="inputBox">
-                        <input type="text" name="email" id="email" class="inputUser" required>
-                        <label for="email" class="labelInput">Email</label>
-                    </div>
-                    <br><br>
-                    <div class="inputBox">
-                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                        <label for="telefone" class="labelInput">Telefone</label>
-                    </div>
-                    <br>
-                    <label for="data_nascimento"><b>Data de Nascimento:</b></label>
-                    <input type="date" name="data_nascimento" id="data_nascimento" required>
-                    <br><br>
-                    <button id="submit" type="submit">CRIAR CONTA</button>
-                    <br>
-                    <button id="submit" type="submit"></button>
-                    </div>
-                </fieldset>
-    </form>
+    <div class="box">
+        <form action="criarconta-aluno.php" method="POST">
+            <fieldset>
+                <legend><b>Cadastro Aluno</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelInput">Senha</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="numb" name="ra" id="ra" class="inputUser" required>
+                    <label for="ra" class="labelInput">RA</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
     </div>
+    <a href="index.php"><button>Voltar a tela inicial</button></a>
 </body>
 
 </html>

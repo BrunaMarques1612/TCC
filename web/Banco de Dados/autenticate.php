@@ -1,6 +1,6 @@
 <?php
 
-include_once('conexao.php');
+/*include_once('conexao.php');
 if(isset($_POST['email']) && strlen($_POST['email']) > 0){
   include('acesso.php');
   
