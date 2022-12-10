@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            background-image: linear-gradient(to right, rgb(20, 147, 220), #00c2ea);
         }
 
         .box {
@@ -109,7 +109,7 @@ if (isset($_POST['submit'])) {
         }
 
         #submit {
-            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            background-image: linear-gradient(to right, rgb(0, 92, 197), #00c2ea);
             width: 100%;
             border: none;
             padding: 15px;
@@ -120,7 +120,7 @@ if (isset($_POST['submit'])) {
         }
 
         button {
-            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            background-image: linear-gradient(to right, rgb(0, 92, 197), #00c2ea);
             width: 100%;
             border: none;
             padding: 15px;
@@ -131,7 +131,7 @@ if (isset($_POST['submit'])) {
         }
 
         #submit:hover {
-            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+            background-image: linear-gradient(to right, rgb(0, 80, 172), #00c2ea);
         }
     </style>
 </head>
