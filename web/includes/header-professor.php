@@ -1,4 +1,5 @@
 <?php
+/*
 session_start();
 include_once('conexao.php');
 // print_r($_SESSION);
@@ -15,6 +16,7 @@ if (!empty($_GET['search'])) {
     $sql = "SELECT * FROM administrador ORDER BY id DESC";
 }
 $result = $conexao->query($sql);
+*/
 ?>
 
 <!DOCTYPE html>
