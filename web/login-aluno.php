@@ -9,11 +9,11 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            background: linear-gradient(to right, rgb(20, 147, 220), #00c2ea);
         }
 
         div {
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: lightslategrey;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -24,14 +24,16 @@
         }
 
         input {
-            padding: 15px;
+            padding: 20px;
+            width: 250px;
             border: none;
+            border-radius: 10px;
             outline: none;
             font-size: 15px;
         }
 
         .inputSubmit {
-            background-color: dodgerblue;
+            background-color: #00c2ea;
             border: none;
             padding: 15px;
             width: 100%;
@@ -42,7 +44,7 @@
         }
 
         .inputSubmit:hover {
-            background-color: deepskyblue;
+            background-color: rgb(20, 147, 220);
             cursor: pointer;
         }
     </style>
@@ -60,9 +62,11 @@
         </form>
         <br><br><br>
         
-            <a href="index.php"> Voltar Tela Inicial</a>
+            <center><a href="index.php"> Voltar</a></center>
         
     </div>
 </body>
 
 </html>
+
+
