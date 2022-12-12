@@ -15,7 +15,7 @@ include 'includes/nav-bar.php';
   <main>
     <div class="container-noticias">
       <div class="grid-noticias1">
-        <img src="img\escola.png" alt="">
+        <img src="imagens\escola.png" alt="">
       </div>
       <div class="grid-noticias2">
         <h3>Curiosidades e Informações</h3>
@@ -37,7 +37,7 @@ include 'includes/nav-bar.php';
           exercício da cidadania.</p>
       </div>
       <div class="grid-noticias5">
-        <img src="img\propaganda.png" alt="">
+        <img src="imagens\propaganda.png" alt="">
         <div class="noticias-fim">
           <h3>Cursos extracurriculares</h3>
           <p>A escola Lino de Mattos incentiva e recomenda cursos de Línguas Estrangeiras </p>
