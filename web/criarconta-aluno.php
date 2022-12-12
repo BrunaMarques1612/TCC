@@ -49,67 +49,50 @@ if (isset($_POST['submit'])) {
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@700&family=Lato&display=swap');
 
-        body {
+        h1{
+            font-size: 29px;
+        }
+
+        body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), #00c2ea);
         }
 
-        .box {
-            color: white;
+        .box{
+            background-color: lightslategrey;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 15px;
+            padding: 80px;
             border-radius: 15px;
-            width: 20%;
+            color: #fff;
         }
 
-        fieldset {
-            border: 3px solid dodgerblue;
-        }
-
-        legend {
-            border: 1px solid dodgerblue;
-            padding: 10px;
-            text-align: center;
-            background-color: dodgerblue;
-            border-radius: 8px;
-        }
 
         .inputBox {
             position: relative;
         }
 
-        .inputUser {
-            background: none;
+        .inputUser{
+            padding: 15px;
+            width: 100%;
             border: none;
-            border-bottom: 1px solid white;
+            border-radius: 10px;
             outline: none;
-            color: white;
             font-size: 15px;
-            width: 100%;
-            letter-spacing: 2px;
         }
-
-        .labelInput {
+        
+        .labelInput{
             position: absolute;
-            top: 0px;
-            left: 0px;
+            top: 25%;
+            left: 0%;
             pointer-events: none;
-            transition: .5s;
+
         }
 
-        .inputUser:focus~.labelInput,
-        .inputUser:valid~.labelInput {
-            top: -20px;
-            font-size: 12px;
-            color: dodgerblue;
-        }
-
-        #submit {
-            background-image: linear-gradient(to right, rgb(0, 92, 197), #00c2ea);
+        #submit{
+            background-color: #00c2ea;
             width: 100%;
             border: none;
             padding: 15px;
@@ -119,8 +102,9 @@ if (isset($_POST['submit'])) {
             border-radius: 10px;
         }
 
-        button {
-            background-image: linear-gradient(to right, rgb(0, 92, 197), #00c2ea);
+
+        button{
+            background: linear-gradient(to right, rgb(20, 147, 220), #00c2ea);
             width: 100%;
             border: none;
             padding: 15px;
@@ -130,38 +114,33 @@ if (isset($_POST['submit'])) {
             border-radius: 10px;
         }
 
-        #submit:hover {
-            background-image: linear-gradient(to right, rgb(0, 80, 172), #00c2ea);
+        #submit:hover{
+            background-color: rgb(20, 147, 220);
+            cursor: pointer;
         }
     </style>
 </head>
-
 <body>
     <div class="box">
         <form action="criarconta-aluno.php" method="POST">
-            <fieldset>
-                <legend><b>Cadastro Aluno</b></legend>
+                <h1><b>Cadastrar Aluno</b></h1>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
+                    <input type="text" name="nome" id="nome" class="inputUser" required placeholder="Nome Completo">
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
-                    <label for="senha" class="labelInput">Senha</label>
+                    <input type="password" name="senha" id="senha" class="inputUser" required placeholder="Senha">
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="numb" name="ra" id="ra" class="inputUser" required>
-                    <label for="ra" class="labelInput">RA</label>
+                    <input type="numb" name="ra" id="ra" class="inputUser" required placeholder="RA">
                 </div>
                 <br><br>
                 <input type="submit" name="submit" id="submit">
-            </fieldset>
         </form>
     </div>
-    <a href="index.php"><button>Voltar a tela inicial</button></a>
+    <a href="index.php"><button>VOLTAR</button></a>
 </body>
 
 </html>

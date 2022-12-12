@@ -50,59 +50,47 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@700&family=Lato&display=swap');
 
+        h1{
+            font-size: 29px;
+        }
+
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), #00c2ea);
         }
         .box{
-            color: white;
+            background-color: lightslategrey;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 15px;
+            transform: translate(-50%, -50%);
+            padding: 80px;
             border-radius: 15px;
-            width: 20%;
-        }
-        fieldset{
-            border: 3px solid dodgerblue;
-        }
-        legend{
-            border: 1px solid dodgerblue;
-            padding: 10px;
-            text-align: center;
-            background-color: dodgerblue;
-            border-radius: 8px;
+            color: #fff;
+        
         }
         .inputBox{
-            position: relative;
+            position:relative;
         }
         .inputUser{
-            background: none;
-            border: none;
-            border-bottom: 1px solid white;
-            outline: none;
-            color: white;
-            font-size: 15px;
+            padding: 15px;
             width: 100%;
-            letter-spacing: 2px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+            
         }
         .labelInput{
             position: absolute;
-            top: 0px;
-            left: 0px;
+            top: 25%;
+            left: 0%;
             pointer-events: none;
-            transition: .5s;
-        }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{
-            top: -20px;
-            font-size: 12px;
-            color: dodgerblue;
+
+
         }
         #submit{
-            background-image: linear-gradient(to right,rgb(0, 92, 197), #00c2ea);
+            background-color: #00c2ea;
             width: 100%;
             border: none;
             padding: 15px;
@@ -113,7 +101,7 @@
         }
 
         button{
-            background-image: linear-gradient(to right,rgb(0, 92, 197), #00c2ea);
+            background: linear-gradient(to right, rgb(20, 147, 220), #00c2ea);
             width: 100%;
             border: none;
             padding: 15px;
@@ -123,35 +111,31 @@
             border-radius: 10px;
         }
         #submit:hover{
-            background-image: linear-gradient(to right,rgb(0, 80, 172), #00c2ea);
+            background-color: rgb(20, 147, 220);
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="box">
         <form action="criarconta-professor.php" method="POST">
-            <fieldset>
-                <legend><b>Cadastro Professor</b></legend>
+                <h1><b>Cadastrar Professor</b></h1>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
+                    <input type="text" name="nome" id="nome" class="inputUser" required placeholder="Nome Completo">
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
-                    <label for="senha" class="labelInput">Senha</label>
+                    <input type="password" name="senha" id="senha" class="inputUser" required placeholder="Senha">
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="numb" name="cpf" id="cpf" class="inputUser" required>
-                    <label for="cpf" class="labelInput">CPF</label>
+                    <input type="numb" name="cpf" id="cpf" class="inputUser" required placeholder="CPF">
                 </div>
-                <br><br>
-                <input type="submit" name="submit" id="submit">
-            </fieldset>
+                <br>
+                <input type="submit" name="submit" id="submit" >
         </form>
     </div>
-    <a href="index.php"><button>Voltar a tela inicial</button></a>
+    <a href="index.php"><button>VOLTAR</button></a>
 </body>
 </html>

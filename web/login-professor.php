@@ -32,6 +32,17 @@
             font-size: 15px;
         }
 
+        button{
+            background: linear-gradient(to right, rgb(20, 147, 220), #00c2ea);
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
         .inputSubmit {
             background-color: #00c2ea;
             border: none;
@@ -62,10 +73,8 @@
             <input class="inputSubmit" type="submit" name="submit" value="Entrar">
         </form>
         <br><br><br>
-        
-        <center><a href="index.php"> Voltar</a></center>
-        
     </div>
+        <a href="index.php"><button>VOLTAR</button></a>
 </body>
 
 </html>
