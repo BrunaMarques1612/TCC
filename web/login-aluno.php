@@ -65,7 +65,7 @@
     <div>
         <h1>Login do Aluno</h1>
         <form action="testLogin-aluno.php" method="POST">
-            <input type="text" name="cpf" placeholder="RA">
+            <input type="text" name="ra" placeholder="RA">
             <br><br>
             <input type="password" name="senha" placeholder="Senha">
             <br><br>
