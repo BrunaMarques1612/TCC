@@ -19,28 +19,52 @@ include 'includes/nav-bar.php';
     <link rel="stylesheet" href="css\styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@700&family=Lato&display=swap');
+        
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, white #00c2ea);
+        }
 
+         h1{
+            font-size: 45px;
+            font-weight: bolder;
+            position:static;
+            top: 50%;
+            left: 50%;
+            padding: 50px;
+            text-align: center;
+            width: 700px; 
+            margin-left: auto;
+            margin-right: auto; 
+            color:  #00c2ea;
+        }      
         .box {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: lightslategrey;
             padding: 30px;
             border-radius: 10px;
+            width: 375px;
+            height: 250px;
         }
 
         .entrar {
             text-decoration: none;
             color: white;
-            border: 3px solid dodgerblue;
-            border-radius: 10px;
+            border: 3px solid #00c2ea;
             padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
         }
 
+        
+
         a:hover {
-            background-color: dodgerblue;
+            background-color: #00c2ea;
         }
     </style>
     <!-- GOOGLE FONTS -->
@@ -50,12 +74,13 @@ include 'includes/nav-bar.php';
 </head>
 
 <body>
+    <h1>O que deseja Fazer?</h1>
     <div class="box">
-        <a class="entrar" href="login-aluno.php">Entrar como Aluno</a>
-        <a class="entrar" href="login-professor.php">Entrar como Professor</a>
+        <a class="entrar" href="login-aluno.php">Login Aluno</a>
+        <a class="entrar" href="login-professor.php">Login Professor</a>
         <br><br><br><br><br><br><br>
-        <a class="entrar" href="criarconta-aluno.php">Cadastrar como Aluno</a>
-        <a class="entrar" href="criarconta-professor.php">Cadastrar como Professor</a>
+        <a class="entrar" href="criarconta-aluno.php">Cadastrar Aluno</a>
+        <a class="entrar" href="criarconta-professor.php">Cadastrar Professor</a>
     </div>
     <!--<div class="central">
         <h1>Login Aluno</h1>
@@ -74,3 +99,4 @@ include 'includes/nav-bar.php';
 </body>
 
 </html>
+
