@@ -37,7 +37,16 @@
           <a class="nav-link" href="eventos.php">EVENTOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">ENTRAR</a>
+          <a class="nav-link dropdown-toggle" href="login.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ENTRAR
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="login-aluno.php">Login Aluno</a></li>
+            <li><a class="dropdown-item" href="login-professor.php">Login Professor</a></li>
+            <li><a class="dropdown-item" href="criarconta-aluno.php">Cadastrar-se como Aluno</a></li>
+            <li><a class="dropdown-item" href="criarconta-professor.php">Cadastrar-se como Professor</a></li>
+          </ul>
+          <!--<a class="nav-link" href="login.php">ENTRAR</a>-->
         </li>
       </ul>
     </div>
