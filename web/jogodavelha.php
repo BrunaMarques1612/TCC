@@ -236,6 +236,7 @@ h3{
         Reiniciar!
       </button>
     </div>
-    <script src="scripts.js"></script>
+    <script src="scriptsjogodavelha.js"></script>
   </body>
 </html>
+ 
