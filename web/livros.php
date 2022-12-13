@@ -15,6 +15,7 @@ include 'includes/nav-bar.php';
   ?>
 <html>
     <head>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
