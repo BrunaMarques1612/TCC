@@ -42,7 +42,7 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-lg-end ">
             <li><a class="dropdown-item" href="jogodavelha.php">Jogo da Velha</a></li>
-            
+            <li><a class="dropdown-item" href="jogoencontreonumero.php">Jogo Encontre o Número</a></li>
           </ul>
         </li>
         <li class="nav-item">
