@@ -38,9 +38,18 @@
         </li>
         <li class="nav-item">
           <a class="nav-link dropdown-toggle" href="login.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            JOGOS</a>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-lg-end ">
+            <li><a class="dropdown-item" href="jogodavelha.php">Jogo da Velha</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="login.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             ENTRAR
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu dropdown-menu-lg-end ">
             <li><a class="dropdown-item" href="login-aluno.php">Login Aluno</a></li>
             <li><a class="dropdown-item" href="login-professor.php">Login Professor</a></li>
             <li><a class="dropdown-item" href="criarconta-aluno.php">Cadastrar-se como Aluno</a></li>
@@ -54,3 +63,4 @@
 </body>
 
 </html>
+
