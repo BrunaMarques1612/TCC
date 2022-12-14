@@ -36,7 +36,7 @@
         <li class="nav-item">
           <a class="nav-link" href="eventos.php">EVENTOS</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="login.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             JOGOS</a>
           </a>
@@ -45,8 +45,8 @@
             <li><a class="dropdown-item" href="jogoencontreonumero.php">Jogo Encontre o Número</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link dropdown-toggle" href="login.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             ENTRAR
           </a>
           <ul class="dropdown-menu dropdown-menu-lg-end ">
